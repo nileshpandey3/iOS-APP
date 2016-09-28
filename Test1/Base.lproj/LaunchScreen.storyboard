@@ -24,7 +24,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="photo-1450101499163-c8848c66ca85iPadPortraitWOSBiOS56_768x1004pt" translatesAutoresizingMaskIntoConstraints="NO" id="n8C-yU-CiE">
-                                <rect key="frame" x="45" y="0.0" width="562" height="600"/>
+                                <rect key="frame" x="18" y="0.0" width="562" height="600"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
