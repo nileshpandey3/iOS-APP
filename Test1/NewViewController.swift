@@ -23,6 +23,7 @@ class NewViewController: UIViewController {
         website.loadRequest(requestObj)
     }
     
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
