@@ -10,6 +10,7 @@ import UIKit
 
 class NewViewController: UIViewController {
 @IBOutlet weak var website: UIWebView!
+  
     var strUrl : NSString = ""
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +22,19 @@ class NewViewController: UIViewController {
         let url = NSURL (string: strUrl as String);
         let requestObj = NSURLRequest(URL: url!);
         website.loadRequest(requestObj)
+       self.navigationController?.navigationBar.backItem?.title = "MSIDT"
+        
+    }
+    
+    
+    @IBAction func back(sender: AnyObject) {
+        website.goBack()
+    }
+    @IBAction func forwardbutton(sender: AnyObject) {
+        website.goForward()
+    }
+    @IBAction func Refresh(sender: AnyObject) {
+        website.reload()
     }
     
     

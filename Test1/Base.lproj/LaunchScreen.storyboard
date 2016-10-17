@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -18,29 +19,71 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="univ-blue" translatesAutoresizingMaskIntoConstraints="NO" id="n8C-yU-CiE">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="univ-blue" translatesAutoresizingMaskIntoConstraints="NO" id="n8C-yU-CiE">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="CSU Fullerton" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g59-l9-XIG">
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Gif-Wz-Gvu">
                                 <rect key="frame" x="72" y="285" width="231" height="29"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="231" id="bII-Ic-Y1a"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="33"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                            </label>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="RAB-Uc-ndU">
+                                        <rect key="frame" x="0.0" y="0.0" width="231" height="29"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="vMH-wd-Ht4">
+                                                <rect key="frame" x="0.0" y="0.0" width="231" height="29"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="PuB-En-u4X">
+                                                        <rect key="frame" x="0.0" y="0.0" width="231" height="29"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="HU0-9A-HwV">
+                                                                <rect key="frame" x="0.0" y="0.0" width="231" height="29"/>
+                                                                <subviews>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="faH-m7-xJY">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="231" height="29"/>
+                                                                        <subviews>
+                                                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Evr-36-w9D">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="231" height="29"/>
+                                                                                <subviews>
+                                                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="gEB-1s-bYF">
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="231" height="29"/>
+                                                                                        <subviews>
+                                                                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="IaY-C5-D9X">
+                                                                                                <rect key="frame" x="0.0" y="0.0" width="231" height="29"/>
+                                                                                                <subviews>
+                                                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="CSU Fullerton" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g59-l9-XIG">
+                                                                                                        <rect key="frame" x="0.0" y="0.0" width="231" height="29"/>
+                                                                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                                                                        <constraints>
+                                                                                                            <constraint firstAttribute="width" secondItem="g59-l9-XIG" secondAttribute="height" multiplier="231:29" id="AfH-HL-Il7"/>
+                                                                                                            <constraint firstAttribute="width" constant="231" id="bII-Ic-Y1a"/>
+                                                                                                        </constraints>
+                                                                                                        <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="33"/>
+                                                                                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                                                        <nil key="highlightedColor"/>
+                                                                                                        <color key="shadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                                                    </label>
+                                                                                                </subviews>
+                                                                                            </stackView>
+                                                                                        </subviews>
+                                                                                    </stackView>
+                                                                                </subviews>
+                                                                            </stackView>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="n8C-yU-CiE" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="Lwd-cu-hc4"/>
-                            <constraint firstItem="g59-l9-XIG" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="298" id="MIC-FE-Ugi"/>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="g59-l9-XIG" secondAttribute="bottom" constant="253" id="SRF-J9-hW7"/>
-                            <constraint firstItem="n8C-yU-CiE" firstAttribute="centerX" secondItem="g59-l9-XIG" secondAttribute="centerX" id="Uax-Ll-mNl"/>
-                            <constraint firstItem="g59-l9-XIG" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="52" id="a4m-h1-tb1"/>
                             <constraint firstAttribute="bottomMargin" secondItem="n8C-yU-CiE" secondAttribute="bottom" constant="-67" id="qyf-a7-OTC"/>
                             <constraint firstItem="n8C-yU-CiE" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="z2P-CW-rWE"/>
                         </constraints>
