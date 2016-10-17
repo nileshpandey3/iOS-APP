@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--MSIDT-->
+        <!--M.S.I.D.T-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Test1" customModuleProvider="target" sceneMemberID="viewController">
@@ -16,7 +16,7 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" alwaysBounceVertical="YES" dataMode="prototypes" id="msR-cw-K0J">
                                 <rect key="frame" x="0.0" y="9" width="375" height="658"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.08769313246011734" green="0.16849681735038757" blue="0.44784611463546753" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="oQN-kW-YJ5">
                                     <size key="itemSize" width="156" height="156"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -31,7 +31,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="156" height="156"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="4y8-IT-6AO">
+                                                <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="4y8-IT-6AO">
                                                     <rect key="frame" x="0.0" y="0.0" width="156" height="156"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 </imageView>
@@ -45,7 +45,7 @@
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
-                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.08217173668623956" green="0.022758246219626299" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
                                             <outlet property="imageopenview" destination="4y8-IT-6AO" id="EKV-KR-Kq5"/>
                                             <outlet property="titlelabel" destination="atF-u3-9CL" id="YVE-pQ-oTP"/>
@@ -60,7 +60,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.3290909843" blue="0.087060912059999995" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="MSIDT" id="SUF-Mi-jkU"/>
+                    <navigationItem key="navigationItem" title="M.S.I.D.T" id="SUF-Mi-jkU"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
                     <connections>
