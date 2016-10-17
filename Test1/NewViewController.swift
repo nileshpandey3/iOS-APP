@@ -22,9 +22,11 @@ class NewViewController: UIViewController {
         let url = NSURL (string: strUrl as String);
         let requestObj = NSURLRequest(URL: url!);
         website.loadRequest(requestObj)
-       self.navigationController?.navigationBar.backItem?.title = "MSIDT"
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "MSIDT", style: UIBarButtonItemStyle.Plain, target: nil, action: nil)
+       
         
     }
+    
     
     
     @IBAction func back(sender: AnyObject) {
