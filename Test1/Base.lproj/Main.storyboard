@@ -61,7 +61,9 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.3290909843" blue="0.087060912059999995" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <navigationItem key="navigationItem" title="MS Instructional Design" id="SUF-Mi-jkU"/>
+                    <navigationItem key="navigationItem" title="MS Instructional Design" id="SUF-Mi-jkU">
+                        <barButtonItem key="backBarButtonItem" title="MSIDT" id="ZJX-Bc-wum"/>
+                    </navigationItem>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="375" height="667"/>
                     <connections>
