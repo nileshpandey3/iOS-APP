@@ -23,7 +23,10 @@ class NewViewController: UIViewController {
         let requestObj = NSURLRequest(URL: url!);
         website.loadRequest(requestObj)
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "MSIDT", style: UIBarButtonItemStyle.Plain, target: nil, action: nil)
-       
+        
+//        website.scrollView.contentOffset = CGPointMake(0, -(website.scrollView.contentInset.top));
+//        [[website scrollView] setContentInset:UIEdgeInsetsMake(64, 0, 44, 0)];
+        website.scrollView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0)
         
     }
     
