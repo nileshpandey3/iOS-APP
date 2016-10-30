@@ -16,6 +16,7 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     // An array to create desired number of cells in the home screen collection view 
     
+    
     let category = ["About Us", "Program Structure", "Courses", "Linkedin" , "Latest News", "Contact Us","Facebook", "Twitter", "Youtube", "Student Portal", "Alumni", "Faculty", "Career Center", "Free Software", "Apply Now", "FAQ"]
     
     let imagearray = [UIImage (named: "Entypo_d83d(1)_512"), UIImage (named: "Entypo_d83d(0)_1024-6"), UIImage (named: "Entypo_d83d(0)_1024"), UIImage (named: "Entypo_f318(0)_1024"), UIImage (named: "Entypo_e776(0)_1024"), UIImage (named: "Entypo_d83d(0)_1024-2"),UIImage (named: "Entypo_f30c(0)_1024"), UIImage (named: "Entypo_f309(0)_1024"), UIImage (named: "Entypo_d83c(0)_1024-1"), UIImage (named: "Entypo_e78e(0)_1024"), UIImage (named: "Entypo_e722(0)_1024"), UIImage (named: "Entypo_d83d(0)_1024-1"), UIImage (named: "Entypo_d83d(0)_1024-3"), UIImage (named: "Entypo_d83d(0)_1024-4"), UIImage (named: "Entypo_e789(0)_1024"), UIImage (named: "Entypo_d83d(0)_1024-5")]
@@ -28,7 +29,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
         
     }
 
@@ -49,10 +49,9 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
         let cell = collectionview.dequeueReusableCellWithReuseIdentifier("cell", forIndexPath: indexPath) as! CollectionViewCell1
         
-        cell.imageopenview.image = self.imagearray[indexPath.row]
+        cell.imageopenview.image = self.imagearray[indexPath.item]
         
-        cell.titlelabel .text = self.category[indexPath.row]
-        
+        cell.titlelabel .text = self.category[indexPath.item]
         
         return cell
         
@@ -74,3 +73,4 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
 
 }
+

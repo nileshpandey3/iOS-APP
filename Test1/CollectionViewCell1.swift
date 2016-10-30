@@ -12,4 +12,9 @@ class CollectionViewCell1: UICollectionViewCell {
     
     @IBOutlet weak var imageopenview: UIImageView!
     @IBOutlet weak var titlelabel: UILabel!
+    
+    override func prepareForReuse() -> Void {
+        imageopenview.image = nil
+        titlelabel.text=nil
+    }
 }
